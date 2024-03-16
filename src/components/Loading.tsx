@@ -1,8 +1,11 @@
+import { Spinner } from "flowbite-react";
+
 export default function Loading() {
     return (
-      <main className="text-center">
-        <h2 className="text-primary">Loading...</h2>
-        <p>🔄</p>
-      </main>
+        <div className="flex flex-wrap gap-2">
+            <div className="text-center">
+                <Spinner aria-label="Large spinner" size="lg" color="warning" />
+            </div>
+        </div>
     );
-  }
+}

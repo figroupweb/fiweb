@@ -1,8 +1,6 @@
-import Link from 'next/link';
-import { Lang } from './Lang';
+import { Lang } from "./Lang";
 import { DarkThemeToggle } from "flowbite-react";
 import Logo from "@/ux/logo";
-import Image from "next/image";
 
 export const Nav = () => {
     return (

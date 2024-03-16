@@ -37,7 +37,6 @@ async function getNewsTracker() {
     );
 
     const { data } = await res.json();
-    console.log(data);
     return data?.fICountryManager?.acfCountryManager?.newsTrackers?.nodes[0];
 }
 

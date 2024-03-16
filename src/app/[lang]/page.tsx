@@ -1,4 +1,3 @@
-import NewsTracker from "@/components/News-Tracker";
 import { Locale } from "@/config/i18n.config";
 import { getDictionaryServerOnly } from "@/dictionaries/default-dictionary-server-only";
 
@@ -17,7 +16,6 @@ export default function Home({ params }: { params: { lang: Locale } }) {
                 })}
             </div>
             <div>{dictionary.country.name}</div>
-            <NewsTracker />
         </>
     );
 }
