@@ -7,6 +7,7 @@ import { Flowbite, ThemeModeScript } from "flowbite-react";
 import Header from "@/components/Header";
 import NewsTracker from "@/components/News-Tracker";
 import { inter } from "@/utils/fonts";
+import Footer from "@/components/Footer";
 
 export async function generateStaticParams() {
     const languages = i18n.locales.map((lang) => ({ lang }));
@@ -35,6 +36,7 @@ export default function RootLayout({
                     <NewsTracker />
                     <Header />
                     {children}
+                    <Footer />
                 </Flowbite>
             </body>
         </html>

@@ -44,7 +44,7 @@ export default async function NewsTracker() {
     const news = await getNewsTracker();
 
     return (
-        <div className="bg-green-300 w-full flex justify-center items-center py-3.5 px-6 md:px-0 mx-auto">
+        <div className="bg-fi-300 w-full flex justify-center items-center py-3.5 px-6 md:px-0 mx-auto">
             <Suspense fallback={<Loading />}>
                 <h3
                     className={`${outfit.className} text-white uppercase text-sm md:text-base font-semibold tracking-wide`}
