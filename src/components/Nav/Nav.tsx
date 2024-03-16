@@ -1,6 +1,6 @@
 import { Lang } from "./Lang";
 import { DarkThemeToggle } from "flowbite-react";
-import Logo from "@/ux/logo";
+import Logo from "@/ux/Logo";
 
 export const Nav = () => {
     return (

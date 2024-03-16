@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { i18n } from "@/config/i18n.config";
@@ -6,6 +6,7 @@ import { Nav } from "@/components/Nav";
 import { Flowbite, ThemeModeScript } from "flowbite-react";
 import Header from "@/components/Header";
 import NewsTracker from "@/components/News-Tracker";
+import { inter } from "@/utils/fonts";
 
 export async function generateStaticParams() {
     const languages = i18n.locales.map((lang) => ({ lang }));
@@ -29,7 +30,7 @@ export default function RootLayout({
             <head>
                 <ThemeModeScript />
             </head>
-            <body>
+            <body className={inter.className}>
                 <Flowbite>
                     <NewsTracker />
                     <Header />
