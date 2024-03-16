@@ -1,11 +1,9 @@
-import '../../styles/globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { i18n } from '@/config/i18n.config';
-import { Nav } from '@/components/Nav';
+import "@/styles/globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { i18n } from "@/config/i18n.config";
+import { Nav } from "@/components/Nav";
 import { Flowbite, ThemeModeScript } from "flowbite-react";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export async function generateStaticParams() {
     const languages = i18n.locales.map((lang) => ({ lang }));
@@ -29,7 +27,7 @@ export default function RootLayout({
             <head>
                 <ThemeModeScript />
             </head>
-            <body className={inter.className}>
+            <body>
                 <Flowbite>
                     <Nav />
                     {children}
