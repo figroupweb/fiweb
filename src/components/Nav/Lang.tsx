@@ -3,7 +3,8 @@
 import { useParams, usePathname } from 'next/navigation';
 
 import Link from 'next/link';
-import { FlagKey, flag, locales } from './locales';
+// import { FlagKey, flag, locales } from './locales';
+import { locales } from "./locales";
 
 export const Lang = () => {
   const { lang } = useParams();
@@ -15,20 +16,20 @@ export const Lang = () => {
   };
 
   return (
-    <div className="group flex items-center">
-      <button>{flag[lang as FlagKey]}</button>
+      <div className="group flex items-center">
+          <button>{lang}</button>
 
-      <ul className="absolute top-12 hidden flex-col gap-2 group-hover:flex">
-        {locales.map((lng) => {
-          if (lng.code === lang) return null;
+          <ul className="absolute top-12 flex-col gap-2 group-hover:flex">
+              {locales.map((lng) => {
+                  if (lng.code === lang) return null;
 
-          return (
-            <li key={lng.code}>
-              <Link href={getPathname(lng.code)}>{lng.ico}</Link>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+                  return (
+                      <li key={lng.code}>
+                          <Link href={getPathname(lng.code)}>{lng.code}</Link>
+                      </li>
+                  );
+              })}
+          </ul>
+      </div>
   );
 };

@@ -1,7 +1,8 @@
 import React from "react";
-import { Lang } from "./Nav/Lang";
-import { inter } from "@/utils/fonts";
 import Logo from "@/ux/Logo";
+import { LocalSwitcher } from "./LocalSwitcher";
+import { inter } from "@/utils/fonts";
+// import { Lang } from "./Nav/Lang";
 
 const navigation = [
     {
@@ -71,7 +72,8 @@ export default function Footer() {
         <footer className="bg-fi-100 dark:bg-slate-400 border-t border-slate-100">
             <div className="w-full pl-12 md:flex md:items-center md:justify-between lg:pl-8">
                 <div className="flex justify-center space-x-6 md:order-3 bg-white p-8">
-                    <Lang />
+                    <LocalSwitcher />
+                    {/* <Lang /> */}
                 </div>
                 <div className="flex justify-center space-x-6 md:order-2 pr-8">
                     {navigation.map((item) => (
