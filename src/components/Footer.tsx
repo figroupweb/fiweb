@@ -1,7 +1,7 @@
 import React from "react";
 import { Lang } from "./Nav/Lang";
 import { inter } from "@/utils/fonts";
-import Logo from "@/ux/Logo";
+import Logo from "@/ux/logo";
 
 const navigation = [
     {
