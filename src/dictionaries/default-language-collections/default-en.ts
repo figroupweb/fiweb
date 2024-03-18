@@ -1,6 +1,6 @@
 export const en = {
   site: {
-    name: 'YouTube Pilot',
+    name: 'FI Pilot',
     description: 'en aaaaaaaaaaaaaaaaaa',
   },
   'Welcome {{name}}': 'Welcome {{name}}',

@@ -1,6 +1,6 @@
 export const es = {
   site: {
-    name: 'Piloto',
+    name: 'FI Piloto',
     description: 'es bbbbbbbbbbbbbbbbbb',
   },
   'Welcome {{name}}': 'Bienvenido {{name}}',
