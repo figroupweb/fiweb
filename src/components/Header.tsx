@@ -20,7 +20,7 @@ import {
 import Image from "next/image";
 // import { ButtonsInline } from "../ux/buttonsInline";
 import { DarkThemeToggle } from "flowbite-react";
-import Logo from "@/ux/Logo";
+import Logo from "@/ux/logo";
 
 const products = [
     {
@@ -59,7 +59,7 @@ const callsToAction = [
     { name: "Contact sales", href: "#", icon: PhoneIcon },
 ];
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
 }
 
