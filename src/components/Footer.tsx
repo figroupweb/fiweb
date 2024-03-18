@@ -1,12 +1,8 @@
 import React from "react";
-
-// import Logo from "@/ux/Logo";
-// import { LocalSwitcher } from "./LocalSwitcher";
-// import { inter } from "@/utils/fonts";
-// import { Lang } from "./Nav/Lang";
-import { Lang } from "./Nav/Lang";
-import { inter } from "@/utils/fonts";
+import { LocalSwitcher } from "./LocalSwitcher";
 import Logo from "@/ux/logo";
+import { inter } from "@/utils/fonts";
+// import { Lang } from "./Nav/Lang";
 
 const navigation = [
     {
