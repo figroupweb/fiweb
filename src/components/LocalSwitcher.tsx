@@ -5,6 +5,7 @@ import { GlobeAltIcon } from "@heroicons/react/20/solid";
 import { Dropdown } from "flowbite-react";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { locales } from "./Nav/locales";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export const LocalSwitcher = () => {
     const { lang } = useParams();
@@ -23,8 +24,9 @@ export const LocalSwitcher = () => {
         const nextLocale = e;
         setIsLangSelected(nextLocale);
         router.push(getPathname(e));
-        // getPathname(e);
-    };
+        sendGTMEvent({ event: `Change Language to ${nextLocale}`, value: `${nextLocale}` });
+    }
+    // getPathname(e);
 
     return (
         <div className="flex flex-row gap-x-2">

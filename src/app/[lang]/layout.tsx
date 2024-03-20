@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import NewsTracker from "@/components/News-Tracker";
 import { inter } from "@/utils/fonts";
 import Footer from "@/components/Footer";
+import { GoogleTagManager } from "@next/third-parties/google";
 // import CookieConsent from "@/components/CookieBotConsent";
 
 export async function generateStaticParams() {
@@ -33,6 +34,7 @@ export default function RootLayout({
                 <ThemeModeScript />
             </head>
             <body className={inter.className}>
+                <GoogleTagManager gtmId="GTM-5TBGTCQJ" />
                 <Flowbite>
                     <NewsTracker />
                     <Header />
