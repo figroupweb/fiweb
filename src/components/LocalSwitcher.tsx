@@ -19,7 +19,7 @@ export const LocalSwitcher = () => {
 
     const [isLangSelected, setIsLangSelected] = useState(lang);
 
-    const onItemClick = (e) => {
+    const onItemClick = (e: string) => {
         const nextLocale = e;
         setIsLangSelected(nextLocale);
         router.push(getPathname(e));
