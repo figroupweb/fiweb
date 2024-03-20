@@ -46,7 +46,9 @@ export default async function SectorPage({
     const news = await getPosts(idioma);
     return (
         <Suspense fallback={<Loading />}>
-            <h3 className="text-lg font-semibold">{dictionary.sector.name}</h3>
+            <h3 className="text-lg font-semibold">
+                {dictionary.sector.name} new
+            </h3>
             {news.map((post) => (
                 <div key={post.uri} className="card">
                     {post.title}
