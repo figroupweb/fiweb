@@ -1,0 +1,1 @@
+export { getAllPostsByLanguage } from "./posts";

@@ -8,6 +8,14 @@ const nextConfig = {
             },
         ],
     },
+    // async rewrites() {
+    //     return [
+    //         {
+    //             source: '/en/about',
+    //             destination: '/es/nosotros',
+    //         },
+    //     ]
+    // },
 };
 
 export default nextConfig;
