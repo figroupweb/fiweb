@@ -9,7 +9,7 @@ import NewsTracker from "@/components/News-Tracker";
 import { inter } from "@/utils/fonts";
 import Footer from "@/components/Footer";
 import { GoogleTagManager } from "@next/third-parties/google";
-// import CookieConsent from "@/components/CookieBotConsent";
+import CookieConsent from "@/components/CookieBotConsent";
 
 export async function generateStaticParams() {
     const languages = i18n.locales.map((lang) => ({ lang }));
@@ -39,7 +39,7 @@ export default function RootLayout({
                     <NewsTracker />
                     <Header />
                     {children}
-                    {/* <CookieConsent /> */}
+                    <CookieConsent />
                     <Footer />
                 </Flowbite>
             </body>
